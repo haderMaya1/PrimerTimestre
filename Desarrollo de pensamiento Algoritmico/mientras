@@ -1,0 +1,214 @@
+Mientras
+
+-Calcular la suma del valor de una factura hasta que el usuario no desee ingresas mas facturas.
+
+INICIO
+  real valorFactura, suma=0, prom
+  caracter sw="si"
+  entero contador=0
+
+  LEA "Desea ingresar facturas si/no", sw
+
+  Mientras (sw="si")
+  	 LEA "Ingrese el valor de la factura", 		valorFactura
+     suma=suma+valorFactura
+     contador=contador+1
+     LEA "Desea ingresar facturas si/no", sw
+  Fin mientras
+
+  prom=suma/contador
+
+  IMPRIMA "El valor de las facturas son", suma
+  IMPRIMA "El numero de facturas son", contador
+  IMPRIMA "Promedio factura es", prom
+FIN  
+
+-Calcular el promedio de notas de 15 estudiantes, pidiendo al usuario la nota final de cada estudiante
+
+INICIO
+	real not, prom, suma=0
+	entero contador=0
+
+	Mientras (contador<=15) hacer
+	
+	LEA "Ingrese su nota", not
+	contador=contador+1
+	suma=suma+not
+	
+	FinMientras
+
+	prom=suma/not
+
+	IMPRIMA "el promedio de notas es", prom
+FIN
+
+-Calcular el promedio de notas de n estudiantes, pidiendo al usuario la nota final de cada estudiante
+
+INICIO
+	real not, prom, suma=0
+	entero contador=0, n=0
+	
+	LEA "Ingrese la cantidad de estudiantes", n
+	
+	Mientras (contador<=n) hacer
+	
+	LEA "Ingrese su nota", not
+	contador=contador+1
+	suma=suma+not
+	
+	FinMientras
+
+	prom=suma/not
+    IMPRIMA "El numero de otas ingresadas es", contador 
+	IMPRIMA "el promedio de notas es", prom
+FIN
+
+
+INICIO 	
+	enteros num
+	LEA "Ingrese un numero", num
+
+	Si (num>=1 v num<=100)
+	  IMPRIMIR "El numero esta entre el rango", num
+	 Sino entonces
+		IMPRIMIR "El numero no esta en el rango"
+	Finsi
+FIN
+
+INICIO
+	reales rpu, sal, porc
+	entero an
+
+	LEA "Ingrese su salario", sal
+	LEA "Ingese su antiguedad en años", an
+
+	Si (an<1)
+		rpu=sal*0.05
+	  Sino
+	  	Si (an>=1 v an<2)
+	  	rpu=sal*0.07
+	     Sino
+	      Si (an>=2 v an<5)
+	      rpu=sal*0.1
+	       Sino
+	        Si (an>=5 v an<10)
+	        rpu=sal*0.15
+	         Sino
+	          Si (an>10)
+	          rpu=sal*0.20
+	          Finsi
+	        Finsi  
+	      Finsi
+	    Finsi  
+	Finsi
+
+	IMPRIMIR "El reparto anual de utilidad es", rpu
+FIN
+
+Para (Instruccion FOR)
+
+INICIO
+		entero n, i
+		LEA "Igrese valor de n",n
+		For (i=1; i<=n; i++)
+					IMPRIMA i
+		Fin para
+FIN
+
+
+
+n=5  			  i++=3 
+i=1 				n=5
+i++=2 			i=3
+n=5 				i++=4
+i=2  			  n=5
+						i=4
+						i++=5
+						n=5
+						i=5
+						i++=6
+						n=5
+						i=6 FIN PARA (FOR)
+
+
+INICIO
+		entero n, i
+		real suma=0
+		LEA "Igrese valor de n",n
+		Para (i=1; i<=n; i++)
+					suma=suma+i
+		Fin para
+
+		IMPRIMA suma
+FIN
+
+n=4      
+i=1
+suma=0+1=(1)
+
+n=4
+i=2
+suma=1+2=(3)
+
+n=4
+i=3
+suma=3+3=(6)
+
+n=4
+i=4
+suma=6+4=(10)
+
+n=4
+i=5
+
+Imprimir los numeros del 5 al 15
+
+INICIO
+		entero i
+		Para (i=5; i<=15; i++)
+					IMPRIMA i
+		Fin para
+FIN
+
+Imprimir los numeros del 100 al 1
+
+INICIO
+		entero  i
+		Para (i=100; i>=1; i--)
+					IMPRIMA i
+		Fin para
+FIN
+
+Imprima los numero de 2 en 2 hasta el 100
+
+INICIO
+		entero  i
+		
+		Para (i=2; i<=100; i=i+2)
+					IMPRIMA i
+		Fin para
+FIN
+
+HAGA (INSTRUCCION)
+
+INICIO
+		entero i=1
+		IMPRIMA "Numero del 1-100"
+		HAGA
+			IMPRIMA i
+			i++
+			MIENTRAS (1<=100)
+FIN
+
+
+
+--INVESTIGAR
+
+VECTORES
+MATRICES
+POO-METODOS
+Clase String
+Clase Math
+
+Los usuarios ingresan al aplicativo y se autentican en el formulario con los datos de usuario y contraseña, luego seleccionan la opción 1, en la cual digitan el número de cedula, la cual como respuesta entrega un código (debe ser capturado por el robot) y los usuarios en la interface del aplicativo dan clic sobre el código el cual abre un documento que posteriormente imprimen y salen del sistema.
+Debe generar el script con variables, de tal menara que el robot siempre use valores diferentes en cada petición y puedan ser replicados por la cantidad de usuarios que sean necesarios.

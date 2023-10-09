@@ -1,0 +1,504 @@
+TALLER N1 Algoritmos
+
+Hader Eldir Maya Muñoz  cc 1152219511
+
+Ficha 2340534
+
+
+1. Hacer un algoritmo que pida que se ingresen 2 números para sumarlos y un número por el 
+cual se desea dividir.
+
+INICIO
+   reales num1, num2, num3, suma, división
+   LEA "Ingrese el primer numero para suma", num1
+   LEA "Ingrese el segundo numero para suma", num2
+
+   suma=num1+num2
+
+   LEA "Ingrese un numero para dividir",num3
+
+   división=suma/2
+
+   IMPRIMA "El resultado de la suma es",suma
+   IMPRIMA "El resultado de la division es",division
+FIN
+
+num1    num2  num3
+   6       4     2
+
+   suma- 6+4=10
+   div - 10/2=5
+------------------------------------------
+2. Hacer un algoritmo que imprima la raíz cuadrada de un número X que es ingresado por el 
+usuario
+
+Raiz cuadra = x**(1/2)
+INICIO
+   reales num,raizcuadrada
+
+   LEA "Calculemos la raiz cuadrada"
+   LEA "Ingrese el numero a calcular", num
+
+   raizcuadrada=num**(1/2)
+
+   IMPRIMA"El resultado es", raizcuadrada
+FIN
+
+num
+  9     raizcuadrada- 9**(1/2)= 3
+
+3. Se necesita obtener el promedio de un estudiante a partir de sus tres notas parciales
+
+INICIO
+reales not1, not2, not3, promedio
+
+   LEA "Por favor ingrese su nota nuemero 1", not1
+   LEA "Por favor ingrese su nota nuemero 2", not2
+   LEA "Por favor ingrese su nota nuemero 3", not3
+
+   promedio=(not1+not2+not3)/3
+
+   IMPRIMA "Su promedio es!", promedio
+FIN
+
+not1      not2     not3
+ 4,0  	   3,5      4,3	
+
+ 	Promedio-- (4,0+3,5+4,3)/3
+ 	         = 11,8/3
+ 	         = 3,9
+
+4. Se requiere el algoritmo para elaborar la planilla de un empleado para ello se dispone de 
+sus horas laboradas en el mes, así como de la tarifa por horas
+
+INICIO
+    cadena nombre
+    reales horaLab, valh, totalp
+    LEA "Ingrese su nombre por favor", nombre
+    LEA "Ingrese su cantidad de horas laboradas", horaLab
+    LEA "Ingrese el valor por horas", valh
+
+    totalp=horasLab*valh
+
+    IMPRIMA "Empleado:", nombre
+    IMPRIMA "El total a pagar es", totalp
+FIN
+
+Horas laboradas (horaLab)   Valor hora(valh)
+                192 horas             4.229$
+
+                totalp=  192*4229
+                      =  811.968                
+
+
+5. Escriba un algoritmo que permita conocer el área de un triángulo a partir de la base y la
+altura.
+
+area=(b*h)/2
+INICIO
+    real b,h,area
+
+    LEA"Ingrese la base del triangulo", b
+    LEA"Ingrese la altura del   triangulo",h
+
+   area=(b*h)/2
+
+   IMPRIMA"el area del triangulo es",area
+FIN
+
+b   h
+5   8    area= (b*h)/2 
+             = (5*8)/2
+             =  40/2 = 20
+
+6. Leer el sueldo de tres empleados y aplicarles un aumento del 10, 12 y 15% respectivamente.
+Desplegar el resultado.
+
+INICIO
+    reales sul1,sul2,sul3, pr1, pr2, pr3
+    aum1, aum2, aum3
+
+    LEA "Ingrese su saldo Empleado 1", sul1
+
+    pr1=(sul1*10)/100
+    aum1=sul1+pr1
+
+    LEA "Ingrese su saldo Empleado 2", sul2
+
+    pr2=(sul2*12)/100
+    aum2=sul2+pr2
+
+    LEA "Ingrese su saldo Empleado 3", sul3
+
+    pr3=(sul3*15)/100
+    aum3=sul3+pr3
+
+    IMPRIMA "Empleado 1, su saldo final es", aum1
+    IMPRIMA "Empleado 1, su aumento es", pr1
+    IMPRIMA "Empleado 2, su saldo final es", aum2
+    IMPRIMA "Empleado 2, su aumento es", pr2
+    IMPRIMA "Empleado 3, su saldo final es", aum3
+    IMPRIMA "Empleado 3, su aumento es", pr3
+FIN
+
+Empleado 1  Empleado 2  Empleado 3
+S  400.000   S 550.000   S 600.000
+ 
+  pr1= (400.000*10)/100=40.000  
+  aum1= 400.000+40.000=440.000
+
+  pr2= (550.000*12)/100=66.000
+  aum2= 550.000+66.000=616.000
+
+  pr3= (600.000*15)/100=90.000
+  aum3= 600.000+90.000=690.000
+
+7. Se lee un número averiguar su cuadrado
+
+INICIO
+    reales num, cd
+    LEA "Ingrese un numero", num
+
+    cd=num**2
+
+    IMPRIMA "Su cuadrado es", cd
+FIN
+
+NUM (8) cd=8**2 =64
+
+8. Realizar un algoritmo que lea cuatro valores numéricos e informar su suma y promedio.
+
+INICIO
+   reales num1, num2, num3, num4, suma, promedio
+
+   LEA "Ingrese el primer numero", num1
+   LEA "Ingrese el segundo numero", num2
+   LEA "Ingrese el tercer numero", num3
+   LEA "Ingrese el cuarto numero", num4
+
+   suma=num1+num2+num3+num4
+
+   promedio=(suma/4)
+
+   IMPRIMA "El resultado de la suma de los cuatro numero es", suma
+   IMPRIMA "El promedio es", promedio
+FIN
+
+9. Calcular una altura en pulgadas (1 pulgada=2.54 cm) y pies (1 pie=12 pulgadas), a partir de 
+la altura en centímetros, que se introduce por el teclado.
+
+1 Pulgada=2.54 cm
+1 Pie=30.48 cm
+
+INICIO
+    reales cm, pies, pulgadas
+
+    LEA "Ingrese altura en Cm para covertir en pulgadas", cm
+
+    pulgadas= cm/2.54
+
+    LEA "Ingrese altura en Cm para convertir en pies", cm
+
+    pies= cm/30.48
+
+    IMPRIMA "La altura en Pies es", pies
+    IMPRIMA "La altura en Pulgadas es", pulgadas
+FIN
+
+10. El costo de un automóvil nuevo para un comprador es la suma del costo del vehículo, 
+porcentaje de la ganancia del vendedor y los impuestos locales o estatales (sobre el 
+precio de la venta). Suponer una ganancia del vendedor del 12% en las unidades y un 
+impuesto del 6%. Hacer un algoritmo que imprima los siguientes valores: costo total 
+vehículo, impuesto y ganancia del vendedor.
+
+INICIO
+    reales valveh, impuesto, ganv, precioinit
+    preciofin
+
+    LEA "Ingrese precio inicial del vehiculo", precioinit
+
+    impuesto=(precioinit*6)/100
+
+    ganv=(precioinit*12)/100
+
+    valveh=ganv+impuesto+precioinit
+
+    IMPRIMA "Impuesto es", impuesto
+    IMPRIMA "Ganancia vendedor", ganv
+    IMPRIMA "El valor total a pagar es", preciofin
+FIN
+
+11. Calcular salario de un empleado leyendo sus horas ordinarias, horas extras y valor de 
+horas. Las horas extras se pagan con un 35% de recargo y se debe hacer un descuento del 
+salario total del 20% imprimir salario básico, valor por horas extras, valor descuento, total 
+a pagar
+
+INICIO
+    reales valh, valhex, descuento, salbas, salhex, totalpag
+
+    LEA "Ingrese el valor a pagar por hora del empleado", valh
+    LEA "Ingrese cantidad de horas extra", valhex
+
+
+    salbas=valh*192
+    valhex=(valh*35)/100
+    descuento=(((salbas+valhex)*20)/100)
+    totalpag=(salbas+valhex)-descuento
+
+    IMPRIMA "El salario basico es", salbas
+    IMPRIMA "El valor de las horas extra es", valhex
+    IMRPIMA "El valor del descuento es", descuento
+    IMPRIMA "El total a pagar es", totalpag
+FIN
+
+12. Todos los lunes miércoles y viernes, una persona recorre la misma ruta y toma los tiempos 
+obtenidos durante el recorrido. Haga un algoritmo para determinar el promedio que la 
+persona tarda en recorrer la misma ruta en una semana cualquiera.
+
+INICIO
+    reales distancia, tm1, tm2, tm3, promedio
+
+    LEA "Ingrese la distancia del recorrido en KM", distancia
+    LEA "Ingrese tiempo del dia 1", tm1
+    LEA "Ingrese el tiempo del dia 2", tm2
+    LEA "Ingrese el tiempo del dia 3", tm3
+
+    promedio=(tm1+tm2+tm3)/3
+
+    IMPRIMA "Distancia", distancia
+    IMPRIMA "El promedio es", promedio
+FIN
+
+13. Una fábrica de acero produce varillas de 6 metros de largo la utilidad por cada varilla está 
+estimada en 15% su precio de venta. Haga un algoritmo que imprima la cantidad de 
+varillas que la fábrica debe producir para lograr una cantidad x d euros. 
+
+INICIO
+    reales euros, porcentaje, valorvar, cantvar, x
+
+    LEA "Ingrese vantidad de varillas a comprar", cantvar
+    LEA "Ingrese el valor de la varilla", valorvar
+
+    porcentaje=((valorvar*cantvar)*15)/100
+    x=porcentaje+valorvar/euros
+
+    IMPRIMA "la cantidad de varillas son", x
+FIN
+
+14. Averiguar el salario de un empleado teniendo en cuenta que cada mes le deducen el 2% 
+de su salario y una bonificación del 10% sobre su salario.
+
+INICIO
+    reales porc1, porc2, salario, salariototal
+
+    LEA "Ingrese su salario", salario
+
+    porc1=(salario*2)/100
+    porc2=(salario*10)/100
+    salariototal=salario-porc1+porc2
+
+    IMPRIMA "Su salario es", salariototal
+FIN
+
+15. Averiguar el salario de un empleado teniendo en cuenta lo siguientes: Deducciones (salud 
+4%, pensión 4%). Y devengados (horas extras 80000, auxilio de transporte 77.700).
+Imprima: nombre empleado, Neto a pagar, total devengado, total deducido
+
+INICIO
+    reales salario, salud, pension, hex, auxt
+    totaldv, totalded, totalpag
+    cadena nombre
+
+    LEA "Ingrese nombre del empleado", nombre
+    LEA "Ingrese su salario base", salario
+
+    salud=(salario*4)/100
+    pension=(salario*4)/100
+    hex=80.000
+    auxt=77.000
+    totalded=salud-pension
+    totaldev=hex+auxt
+    totalpag=salario+hex+auxt-(pension-salud)
+
+    IMPRIMA "", nombre
+    IMPRIMA "Total dedicido", totalded
+    IMPRIMA "Total devengado", totaldev
+    IMPRIMA "Total a pagar", totalpag
+FIN
+
+16. Se requiere el total de una factura, para 3 artículos distintos lea articulo cantidad, valor 
+unitario. Calcular total de la factura.
+
+INICIO
+    reales art1, cart1, cart2, art2, cart3, art3, totalfac
+    LEA "Valor articulo 1", art1
+    LEA "Cantidad articulo 1", cart1
+    LEA "Valor articulo 2", art2
+    LEA "Cantidad articulo 2", cart2
+    LEA "Valor articulo 3", art3
+    LEA "Cantidad articulo 3", cart 3
+
+    totalfac=(art1*cart1)+(art2*cart2)+(art3*cart3)
+
+    IMPRIMA "Total compra", totalfac
+FIN
+
+17. Convertir de grados Celsius a grados Fahrenheit
+F= (1,8) *C +32
+
+INICIO
+    reales c, f
+    LEA "Ingrese temperatura en Celsius", c    
+
+    f=(1.8*c)+32
+
+    IMPRIMA "La temperatura en Fahrenheit", f
+FIN    
+
+18. Mostrar la 5 parte de la suma de tres números
+
+INICIO
+    reales n1, n2, n3, suma, div
+
+    LEA "Ingrese numero 1", n1
+    LEA "Ingrese numero 2", n2
+    LEA "Ingrese numero 3", n3
+
+    suma=n1+n2+n3
+    div=suma/5
+
+    IMPRIMA "La suma es", suma
+    IMRPIMA "La quinta parte ", div
+FIN
+
+19. Convertir una cantidad de metros a centímetros
+
+INICIO
+    reales metros, centimetros
+
+    LEA "Ingrese cantidad en metros", metro
+
+    centimetros=metros*100
+
+    IMPRIMA "En centimetros", centimetros
+FIN
+
+20. Averiguar el salario de dos empleados teniendo en cuenta que cada mes le deducen el 1% 
+de su salario, lea valor horas y número de horas trabajadas. Imprima el salario de cada 
+empleado y el total general de la nómina y nombre de empleados.
+
+INICIO
+    reales valh1, valh2, hot1, hot2, sal1, sal2, deduc, total1, total2, totalnom
+    cadena nom1, nom2
+
+    LEA "Ingrese su nombre", nom1
+    LEA "Ingrese el valor por hora trabajada", valh1
+    LEA "Ingrese cantidad de horas trabajadas", hot1
+
+    sal1=val1*hot1
+    deduc=(sal1*1)/100
+    total1=sal1-deduc
+
+    LEA "Ingrese su nombre", nom2
+    LEA "Ingrese el valor por hora trabajada", valh2
+    LEA "Ingrese cantidad de horas trabajadas", hot2
+
+    sal2=val2*hot2
+    deduc=(sal2*1)/100
+    total2=sal2-deduc
+
+    totalnom=total2+total1
+
+    IMPRIMA "", nom1
+    IMPRIMA "Su salario total es", total1
+    IMPRIMA "", nom2
+    IMPRIMA "Su salario total es", total2
+    IMPRIMA "El total de la nomina es", totalnom
+FIN
+
+21. Un maestro desea saber qué porcentaje de hombres y que porcentaje de mujeres hay en 
+un grupo de estudiantes
+
+INICIO
+    reales porcmuj, porchom, hombres, mujeres, suma
+
+    LEA "Ingrese cantidad de hombres", hombres
+    LEA "Ingrese cantidad de mujeres", mujeres
+
+    suma=hombres+mujeres
+    porcmuj=(mujeres*100)/suma
+    porchom=(hombres*100)/suma
+
+    IMPRIMIR "El porcentaje de mujeres es", porcmuj
+    IMPRIMIR "El porcentaje de hombres es", porchom
+FIN
+
+22. Tres personas deciden invertir su dinero para fundar una empresa. Cada una de ellas 
+invierte una cantidad distinta. Obtener el porcentaje que cada quien invierte con respecto 
+a la cantidad total invertida.
+
+INICIO
+    reales suma, inv1, inv2, inv3, p1, p2, p3
+    LEA "Ingrese monto de la primera persona", inv1
+    LEA "Ingrese monto de la segunda persona", inv2
+    LEA "Ingrese monto de la tercera persona", inv3
+
+    suma=inv1+inv2+inv3
+    p1=(inv1*100)/suma
+    p2=(inv2*100)/suma
+    p3=(inv3*100)/suma
+
+    IMPRIMA "Total invertido", suma
+    IMPRIMA "Porcentaje primera persona", p1
+    IMRPIMA "Porcentaje segunda persona", p2
+    IMPRIMA "Porcentaje tercera persona", p3
+FIN
+
+23. Dada una medida de tiempo expresada en horas, minutos y segundos con valores 
+arbitrarios, elabore un algoritmo que transforme dicha medida en una expresión correcta. 
+Por ejemplo, dada la medida 3h 118m 195s, el algoritmo deberá obtener como resultado 
+5h 1m 15s
+
+INICIO 
+    reales hora, minuto, segundo, h, m, s
+    LEA "Escriba las horas", hora
+    LEA "Escriba los minutos", minutos
+    LEA "Escriba los segundos", segundos
+
+    s=segundos mod 60
+    m=minutos+(segundos-s)/60
+    h=hora+(minutos-m mod 60)60
+    m=m mod 60
+    h=hora mod 24
+
+    IMPRIMA "horas", h
+    IMPRIMA "minutos", m
+    IMPRIMA "segundos", s
+FIN
+
+24. Utilizando variables auxiliares invierta el valor de las variables A=3, B=5
+
+INICIO
+    enteros a, b
+    a=3
+    b=5
+    a=b
+    c=3
+    b=c
+    IMPRIMA "El valor de A es", a
+    IMPRIMA "El valor de B es", b
+FIN
+
+
+25. Sin utilizar variables cambie el valor de las variables.
+
+INICIO
+    a=3
+    b=5
+    a=3+2
+    b=5-2
+    IMPRIMA "El valor de a", a
+    IMPRIMA "El valor de b", b
+FIN    
+
+

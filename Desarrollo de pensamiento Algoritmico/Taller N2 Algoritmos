@@ -1,0 +1,161 @@
+Taller 2
+
+1. Si a=33, determinar si la siguiente operación es Verdadera o Falsa
+NOT((33>10) ^ (33<20))
+NOT (v^F)
+NOT   F
+      V
+       
+2. NOT ((33>10) V NOT(33<20))
+   NOT   ( v    V NOT  F )
+   NOT (v V v)
+   NOT   v
+         f
+
+3. Si a=20 b=a c=15 d=10, determinar si la siguiente
+operación es Verdadera o Falsa
+ ((a=b) V (b>c)) V (c<d)
+ ( v    V    v)  V  f
+        v        V  f
+              v  
+
+4. [[(3*5)/3+8 mod 5 > 8*3**2] v [(7-5+3)<9 ]] ^ ( 9-3/3<=8)
+   [[15/3+(8 mod 5)>8*9] v [(5)<9]] ^ 9-1<=8
+   [15/3+3>72] v [5<9]] ^ 8<=8
+   [5 + 3 > 72 v 5<9] ^ 8<=8
+   [8 > 72 v 5<9] ^ 8<=8
+      [F   v   V] ^ v
+           V      ^ V
+                V
+
+-------------------------------------------------
+                
+1. Diga si una persona es mayor de edad
+
+INICIO
+	cadena mayor, menor
+	enteros edad
+	LEA "Ingrese edad por favor", edad
+
+	Si edad>=18
+		edad=mayor
+	Sino 
+		edad=menor
+	Fin si
+
+	IMPRIMIR "La persona es", edad
+FIN
+
+2. Leer dos datos numéricos enteros. Imprimirlos en forma ascendente
+
+INICIO
+	entero n1, n2
+	cadena cadena
+	LEA "Ingrese numero 1", n1
+	LEA "Ingrese numero 2", n2
+
+	Si n1>n2
+	 cadena=n1,n2
+	Sino
+	 cadema=n2,n1
+	Fin si
+
+	IMPRIMA "la cadena es", cadena
+FIN
+
+3. Diseñar un algoritmo que lea un valor numérico y diga que si dicho 
+valor es mayor o no que 100.
+
+INICIO
+	reales val, resl
+	cadena mayor, igual, menor
+	LEA "Ingrese un valor", val
+
+	Si val>100	
+		resul=mayor
+	Sino val==100
+		resul=igual
+	Sino val<100
+		resul=menor
+	finsi
+	IMPRIMA "Es valor es", resul
+FIN
+
+4. construye un algoritmo que diga si un numero es positivo o negativo:
+
+INICIO
+	reales n1
+	cadena positivo, negativo
+	LEA "Ingrese un numero", n1
+
+	SI n1>=0
+	   n1=positivo
+	Sino
+	   n1=negativo
+	Finsi
+
+	IMPRIMIR "El numero es", n1 
+FIN
+
+5. Imprima si una persona recibe bono, si sus ventas son mayores a 
+5.000.000.
+
+INICIO
+	reales vent
+	cadena si, no
+	LEA "Ingrese el valor de ventas", vent
+
+	Si vent>5.000.000
+	   vent=si
+	Sino 
+	   vent=no
+	Finsi
+
+	Imprima "La persona", vent "recibe bono"
+FIN
+
+6. Construir un algoritmo tal, que dado como dato la calificación de un 
+alumno en un examen, escriba "Aprobado" en caso que esa 
+calificación fuese mayor que 8. Mensaje de aprobado si se cumple la 
+condición.
+
+INICIO
+	reales calf
+	cadena aprobado, reprobado
+	LEA "Ingrese su calificacion", calf
+
+	Si calf>=8
+	   calf=aprobado
+	Sino
+	   calf=reprobado
+	Finsi
+
+	IMPRIMA "Usted esta", calf
+FIN
+
+7. Elaborar un algoritmo que lea dos datos. Un dato que pueda ser el 
+valor de 1 o de 2 y otro dato que podrá ser el radio de un circulo o el 
+lado de un cuadrado. Si el dato que se lee es 1 corresponde al radio de 
+un circulo, si es 2 corresponde al lado de un cuadrado. Calcular el 
+área del circulo o área de un cuadrado con mensaje si es 1 “El área del 
+circulo es:” o 2 “El área del cuadrado es:”
+
+INICIO
+	reales areacir, areacua, ladc, pi, circunferencia, r
+	enteros 1, 2
+	cadena num
+	
+	pi=3.14
+
+	LEA "Ingrese el valor en cm de un lado del cuadrado", ladc
+	LEA "ingrese el radio del circulo", r
+	LEA "Ingrese 1 si desea saber el area de un circulo o ingrese 2 si desea saber el area de un cuadrado", num
+
+	Si num=1
+	   areacir=pi*(r**2)
+	Sino num=2
+	   areacua= ladc**2
+	Finsi
+
+	IMPRIMIR "El area es", num
+FIN

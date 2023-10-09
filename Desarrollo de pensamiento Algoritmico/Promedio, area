@@ -1,0 +1,35 @@
+Hacer un algoritmo que calcule el area
+de un triangulo
+
+area=b*h/2
+INICIO
+  	real b,h,area
+  	LEA"Ingrese la base del triangulo", b
+  	LEA"Ingrese la altura del 	triangulo",h
+	area=(b*h)/2
+	IMPRIMA"el area del triangulo es",area
+FIN
+
+*Hacer un algoritmo que calcule el promedio de notas de la materia algoritmo teniendo en cuenta que son tres talleres, leer nombre estudiante y materia
+
+INICIO
+	real nota1,nota2,nota3, promedio
+	cadena nombre, materia
+	LEA "Ingrese su nombre", nombre
+	LEA "Ingrese el nombre de la materia", materia
+	LEA "Ingrese primera nota", nota1
+	LEA "Ingrese segunda nota", nota2
+	LEA "Ingrese tercera nota", nota3
+	promedio=(nota1+nota2+nota3)/3
+	IMPRIMA "", nombre
+	IMPRIMA "", materia
+	IMPRIMA "El promedio es", promedio
+
+	Prueba de Escritorio
+ NOTA1     NOTA2    NOTA3
+   3,8       4,0      4,2
+
+   Promedio = (3,8+4,0+4,2)/3
+
+   Total Promedio = (12,0)/3 
+                  =  4,0
