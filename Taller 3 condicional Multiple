@@ -1,0 +1,503 @@
+Taller 3 condicional Multiple
+
+Hader Eldir Maya Muñoz	
+CC 1152219511
+Ficha 2340534
+
+TALLER
+1. Ingrese un numero muestre un mensaje que diga si se
+encuentra entre el rango de 1 a 100
+
+INICIO 	
+	enteros num
+	LEA "Ingrese un numero", num
+
+	Si num>=1 entonces
+		si num<=100
+		IMPRIMIR "El numero esta entre el rango", num
+	 Sino entonces
+		IMPRIMIR "El numero no esta en el rango"
+	Finsi
+FIN
+
+2. Leer tres números diferentes e imprimir solo el número mayor 
+de los tres.
+
+INICIO
+	enteros n1, n2, n3
+	LEA "Ingre nuemero 1", n1
+	LEA "Ingre nuemero 2", n2
+	LEA "Ingre nuemero 3", n3
+
+	si (n1>n2 v n1>n3)
+		IMPRIMIR "El numero 1 es mayor", n1
+	  sino 
+	  	si (n2>n1 v n2>n3)
+	  	IMPRIMA "El numero 2 es mayor", n2
+
+	  	 sino
+	  	 IMPRIMA "El numero 3 es mayor", n3
+	  	Finsi
+	Finsi
+FIN
+
+3. Leer 2 números; si son iguales que los multiplique, si el
+primero es mayor que el segundo que los reste y si no que los 
+sume.
+
+INICIO
+	enteros n1, n2
+	real suma, resta, mult
+
+	LEA "Ingrese el primer numero", n1
+	LEA "Ingrese el segundo numero", n2
+
+	si (n1==n2)
+	    mult=n1*n2
+	    IMPRIMA "La multiplicacion es", mult
+
+	   sino 
+	     si (n1>n2)
+	      resta=n1-n2
+	      IMPRIMA "Las resta es", resta
+	     
+	     sino 
+	      suma=n1+n2
+	      IMPRIMA "Las suma es", suma
+	     finsi
+	finsi
+FIN	
+
+
+4. En una tienda de descuento se efectúa una promoción en la
+cual se hace un descuento sobre el valor de la compra total
+según el color de la bolita que el cliente saque al pagar en caja.
+Si la bolita es de color blanco no se le hará descuento alguno, si 
+es verde se le hará un 10% de descuento, si es amarilla un 25%,
+si es azul un 50% y si es roja un 100%. Determinar la cantidad
+final que el cliente deberá pagar por su compra se sabe que solohay bolitas de los colores mencionados.
+
+
+INICIO
+	reales b=0, v=10, a=25, az=50, r=100, fac, tp
+	vl
+	cadena color
+	LEA "Ingrese el total de las compras", fac
+
+	Si (color==b)
+		tp=(fac*b)/100
+		vl=fac-tp
+	 Sino
+ 	   Si (color==v)
+ 	   	tp=(fac*v)/100
+ 	   	vl=fac-tp	
+ 	   	 Sino
+ 	   	  Si (color==a)
+ 	   	   tp=(fac*a)/100
+ 	   	   vl=fac-tp
+ 	   	    Sino 
+ 	   	     Si (color==az)
+ 	   	     tp=(fac*az)/100
+ 	   	     vl=fac-tp
+ 	   	      Sino
+ 	   	      tp=(fac*r)/100
+ 	   	      vl=fac-tp
+ 	   	     Finsi 
+ 	   	  Finsi  
+ 	   Finsi
+ 	Finsi   
+
+ 	IMPRIMIR "El valor total a pagar es", vl
+FIN
+
+5. Calcular la utilidad que un trabajador recibe en el 
+reparto anual de utilidades si este se le asigna como 
+un porcentaje de su salario mensual que depende de
+su antigüedad en la empresa de acuerdo con la 
+siguiente tabla:
+
+INICIO
+	reales a=5, b=7, c=10, d=15, e=20, rpu, sal, porc
+	entero an
+
+	LEA "Ingrese su salario", sal
+	LEA "Ingese su antiguedad en años", an
+
+	Si (an<1)
+		rpu=(sal*a)/100
+	  Sino
+	  	Si (an>=1 v an<2)
+	  	rpu=(sal*b)/100
+	     Sino
+	      Si (an>=2 v an<5)
+	      rpu=(sal*c)/100
+	       Sino
+	        Si (an>=5 v an<10)
+	        rpu=(sal*d)
+	         Sino
+	          Si (an>10)
+	          rpu=(sal*e)/100
+	          Finsi
+	        Finsi  
+	      Finsi
+	    Finsi  
+	Finsi
+
+	IMPRIMIR "El reparto anual de utilidad es", rpu
+FIN
+
+6. Una frutería ofrece las manzanas con descuento 
+según la siguiente tabla:
+Numero de kilos comprados % Descuento
+Determinar cuánto pagara una persona que compre
+manzanas es esa frutería.
+
+INICIO	
+	reales val, valt, por, kg
+
+	LEA "Ingrese el numero de kilos", kg
+	LEA "Ingrese el valor sin descuento", val
+
+	Si (kg>=0 v kg<2)
+	 por=val*0
+	 valt=val-por
+
+	 Sino
+	  Si (kg>=2.01 v kg<5)
+	   por=val*0.1
+	   valt=val-por
+
+	   Sino
+	    Si (kg>=5.01 v kg<10)
+	     por=val*0.15
+	     valt=val-por
+
+	     Sino
+	      Si (kg>=10.1)
+	       por=val*0.2
+	       valt=val-por
+
+	      Finsi 
+	    Finsi
+	  Finsi  
+	Finsi  
+
+	IMPRIMA "El total a pagar es", valt
+FIN
+
+7. En una llantera se ha establecido una promoción de
+la siguiente manera: Si se compran menos de cinco
+llantas el precio es de $300 cada una, de $250 si se
+compran de cinco a 10 y de $200 si se compran más
+de 10. Obtener la el valor a pagar por llanta y la que
+tiene que pagar por el total de la compra.
+
+INICIO
+	enteros valg, numl, valp
+
+	LEA "Ingrese cantidad de llantas a comprar", numl
+
+	Si (numl<5)
+	  valg=300
+	  valp=numl*valg
+
+	  Sino
+	   Si (numl>=5 v numl<=10)
+	    valg=250
+	    valp=numl*valg
+
+	    Sino 
+	     Si(numl>10)
+	      valg=200
+	      valp=numl*valg
+	     Finsi
+	   Finsi
+	Finsi
+
+	IMPRIMA "El valor total a pagar es", valp
+FIN
+
+8. Escriba un programa para liquidar el servicio de teléfono según la
+pulsaciones. Para ello se ingresa número de teléfono, cantidad de
+pulsaciones. Tenga en cuenta las siguientes tarifas POR PULSACION para
+liquidar el servicio de teléfono:
+Entre 0 a 300 pulsaciones $ 85.oo
+Entre 301 a 800 pulsaciones $ 69.oo
+Entre 801 a 1600 pulsaciones $ 58.oo
+1601 o más pulsaciones $ 50.oo
+El programa debe calcular y mostrar el valor a pagar por el servicio
+
+
+
+INICIO
+  	reales p, valp
+  	cadena tel
+
+  	LEA "Ingrese su numero", tel
+  	LEA "Ingrese numero de pulsaciones", p
+
+  	Si (p>=0 v p<=300)
+  	 valp=85.00*p
+
+  	 Sino
+  	  Si (p>=301 v p<=800)
+  	   valp=69.00*p
+
+  	   Sino
+  	    Si (p>=801 v p<=1600)
+  	     valp=58.00*p
+
+  	     Sino
+  	      Si (p>=1601)
+  	       valp=50.00*p
+  	      Finsi
+  	    Finsi
+  	  Finsi
+  	Finsi
+
+  	IMRPIMA "Numero", tel
+  	IMPRIMA "Su tarifa es", valp
+FIN  	
+
+9. Ingrese un numero diga si es o no par
+
+INICIO 
+	entero num
+	cadena par, impar
+
+	LEA "Ingrese un numero", num
+
+	Si (num mod 2==0)
+	   IMPRIMA "El numero es", par
+
+	   Sino 
+	   IMPRIMA "El numero es", impar
+	Finsi
+FIN   
+
+10. Diga si un numero ingresado por el usuario es divisible por 3
+
+INICIO 
+	entero num
+	
+
+	LEA "Ingrese un numero", num
+
+	Si (num mod 3==0)
+	   IMPRIMA "El numero es divisible"
+
+	   Sino 
+	   IMPRIMA "El numero no es divisible"
+	Finsi
+FIN   
+
+11. Hallar el valor absoluto de un número ingresado por el usuario
+
+INICIO
+	real num, vala
+	LEA "Ingrese un numero", num
+
+	Si (num<0)
+	   vala=|num|
+	   IMPRIMA "El valor absoluto es", vala
+
+	   Sino
+	    Si (num=>0)
+	     IMPRIMA "El valor absoluto es", num
+
+	    Finsi
+	Finsi
+FIN 
+
+12. Diga si un numero ingresado por el usuario es múltiplo de 3 o 7   
+
+INICIO 
+	entero num
+
+	LEA "Ingrese un numero", num
+
+	Si (num mod 3==0)
+	   IMPRIMA "El numero es divisible entre 3", 
+	   Sino 
+	    Si (num mod 7==0)
+	    IMPRIMA "El numero es divisible entre 7", 
+
+	    Sino
+	     IMPRIMA "El numero no es divisible por 3 o 7"
+	    Finsi
+	Finsi
+FIN   
+
+13. Determinar en qué estado está el agua en función de su temperatura. Si es
+negativa el estado será sólido, si es menor que 100 será líquido y si es mayor o
+igual que 100 será gas. Pedir al usuario el valor de la temperatura.
+
+INICIO
+ 	reales temp
+ 	cadena estado
+
+ 	LEA "Ingrese temperatura del agua", temp
+
+ 	Si (temp<0)
+ 	  estado=solido
+
+ 	  Sino
+ 	   Si (temp>=0 v temp<100)
+ 	    estado=liquido
+
+ 	    Sino
+ 	     estado=gaseoso
+ 	   Finsi
+ 	Finsi
+ 	
+ 	IMPRIMA "El estado del agua es", estado
+FIN
+
+14. Un vendedor gana comisión según las ventas, si estas son mayores e iguales a
+13.000.000 tendrá bono del 10 sobre las ventas en caso contrario el 1%
+
+INICIO
+   	reales tventa, bono, sal, sal2
+
+   	LEA "Ingrese el valor total de las ventas", tventa
+   	LEA "Ingrese su salario", sal
+
+   	Si (tventa>=13000000)
+   	 bono=tventa*0.1
+   	 sal2=bono+sal
+   	 IMPRIMA "El bono es", bono
+   	 IMPRIMIR "El pago es", sal2
+
+   	 Sino
+   	  Si (tventa<13000000)
+   	  bono=tventa*0.01
+   	  sal2=bono+sal
+   	  IMPRIMA "El bono es", bono
+   	  IMPRIMA "El pago es", sal2
+   	Finsi
+FIN
+
+15. En una empresa cada empleado debe teclear un código 
+identificador de 3 cifras en la entrada. Diseñe un 
+algoritmo que muestre por pantalla la categoría del
+empleado teniendo en cuenta que: 
+• Si el código es divisible por 2, por 3 y por 5, la categoría del
+empleado es “Director general”. 
+• Si el código es divisible por 3 y por 5 pero no por 2, la
+categoría del empleado es “Directivo”.
+• Si el código es divisible por 2, pero no por 3 ni por 5, la 
+categoría del empleado es “Personal”.
+• Si el código no es divisible por 2, ni por 3 ni por 5, la 
+categoría del empleado es “Seguridad”. 
+
+INICIO
+	entero cod
+
+	LEA "Ingrese el codigo", cod
+
+	Si (cod mod 2==0 v cod mod 3==0 v cod mod 5==0)
+	 IMPRIMIR "Director General"
+
+	 Sino
+	  Si (cod mod 3==0 v cod mod 5==0 v cod mod 2<>0 )
+	  IMPRIMIR "Directivo"
+
+	  Sino
+	   Si (cod mod 2==0 v cod mod 5<>0 v cod mod 3<>0)
+	   IMPRIMIR "Personal"
+
+	   Sino 
+	    Si (cod mod 2<>0 v cod mod 5<>0 v cod mod 3<>0)
+	    IMPRIMIR "Seguridad"
+
+	    Finsi
+	   Finsi
+	  Finsi 
+	Finsi  
+FIN
+
+1. Construir un algoritmo en el cual se lea nombre de
+una persona, estado civil, edad y salario. Definir cual
+es el nuevo salario y la descripción del estado civil. Si
+el estado civil es soltero y la edad menor e igual a 30
+años se le hará un aumento sobre su salario del 30%,
+si es soltero y mayor a 30 el aumento será del 12%, si
+es casado y tiene menos de 25 años el 15%, si es
+casado y es mayor e igual 25 años el aumento es del
+12%, si es separado y mayor de 40 se aumento el 15%,
+si es separado y menor e igual 40 años el aumento
+será del 20%
+
+INICIO
+	reales sal, a=0.3, b=0.12, c=0.15, d=0.2, aum, salf
+	cadena nom, edad, ec
+	entero edc
+
+	LEA "Ingrese su nombre", nom
+	LEA "Ingrese su edad", edad
+	LEA "Ingrese su estado civil, 1 para soltero, 2 para casado, 3 para separado", edc
+	LEA "Ingrese su salario", sal
+
+	En-caso-de  edc hacer
+	  Caso 1: (ec=="soltero" v edad<=30)
+	    aum=sal*a
+	    salf=sal+aum
+	    SALTAR
+	  Caso 2: (ec=="soltero" v edad>30)
+	    aum=sal*b
+	    salf=sal+aum
+	    SALTAR
+	  Caso 3:(ec=="casado" v edad<25)
+	    aum=sal*c
+	    salf=sal+aum
+	    SALTAR
+	  Caso 4:(ec=="casado" v edad>=25)
+	    aum=sal*b
+	    salf=sal+aum
+	    SALTAR
+	  Caso 5:(ec=="separado" v edad>40)
+	    aum=sal*c
+	    salf=sal+aum
+	    SALTAR
+	  Caso 6:(ec=="separado" v edad<=40)
+	    aum=sal*d
+	    salf=sal+aum
+	    SALTAR
+	Fincaso
+
+	IMPRIMA "Nombre", nom
+	IMPRIMA "Edad", edad
+	IMPRIMA "Salario final", salf
+FIN
+2. Dado un numero entre 1 y 7 escriba su
+correspondiente día de la semana así:
+1- Lunes 2- Martes 3- Miércoles 4- Jueves 5- Viernes
+6- Sábado 7- Domingo
+
+INICIO
+    cadena dia
+    enteros num
+
+    LEA"ingrese un valor: 1 para lunes, 2 para martes, 3 para miercoles, 4 para jueves, 5 para viernes, 6 para sabado, 7 para domingo",num
+
+    num=dia
+    En-caso-de num hacer
+    
+		Caso 1:dia=="lunes"
+		Salte
+		Caso 2:dia=="martes"
+		Salte
+		Caso 3:dia=="miercoles"
+		Salte
+		Caso 4:dia=="jueves"
+		Salte
+		Caso 5:dia=="viernes"
+		Salte
+		Caso 6:dia=="sabado"
+		Salte
+		Caso 7:dia=="domingo"
+		Salte
+	Fincaso
+
+	IMPRIMA"el numero corresponde a el dia",dia
+FIN
